@@ -4,3 +4,26 @@ figure {
 	text-align: center;
 	padding: 10px;
 }
+
+figure img {
+	width: 90px;
+	height: 120px;
+	transition-property: width, height;
+	transition-duration: .5s;
+}
+
+figure img:hover {
+	width: 180px;
+	height: 240px;
+}
+
+figcaption a {
+	color: green;
+	font-size: 20px;
+	transition: color 0.5s linear, font-size .5s linear .5s;
+}
+
+figcaption a:hover {
+	color: blue;
+	font-size: 24px;
+}
