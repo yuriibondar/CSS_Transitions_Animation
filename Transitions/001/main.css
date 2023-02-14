@@ -20,7 +20,9 @@ figure img:hover {
 figcaption a {
 	color: green;
 	font-size: 20px;
-	transition: color 0.5s linear, font-size .5s linear .5s;
+	transition: 
+		color 0.5s, 
+		font-size .5s .5s;
 }
 
 figcaption a:hover {
