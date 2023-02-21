@@ -14,16 +14,24 @@ body {
 	position: absolute;
 	animation-name: spin;
 	animation-duration: 2s;
-	animation-timing-function: ease;
+	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	animation-direction: normal;
+	animation-direction: alternate;
+	animation-delay: 1s;
+}
+
+.square:hover {
+	animation-play-state: paused;
 }
 
 @keyframes spin {
 	0% {
-		transform: rotate(0deg);
+		transform: rotate(360deg);
+	}
+	50% {
+		top: 50px;
 	}
 	100% {
-		transform: rotate(360deg);
+		transform: rotate(0deg);
 	}
 }
