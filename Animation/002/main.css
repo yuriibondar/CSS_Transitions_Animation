@@ -14,8 +14,14 @@ body {
 	position: absolute;
 	animation-name: move, spin;
 	animation-duration: 2s;
+	animation-delay: 1s, 0s;
 	animation-timing-function: linear, ease;
 	animation-iteration-count: infinite;
+	animation-direction: normal, alternate;
+}
+
+.square:hover {
+	animation-play-state: paused;
 }
 
 @keyframes move {
