@@ -12,11 +12,11 @@ body {
 	text-align: center;
 	line-height: 60px;
 	position: absolute;
-	animation-name: pop;
+	animation-name: move;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
-	/* animation-direction: alternate; */
+	animation-direction: alternate;
 	animation-delay: 1s;
 }
 
@@ -42,5 +42,15 @@ body {
 	}
 	100% {
 		transform: scale(2);
+	}
+}
+
+@keyframes move {
+	0% {
+		transform: translate(30px);
+	}
+
+	100% {
+		transform: translate(400px, 100px);
 	}
 }
