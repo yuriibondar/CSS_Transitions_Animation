@@ -1,0 +1,62 @@
+body {
+	background: url(http://toptal.com/designers/subtlepatterns/uploads/sandpaper.png);
+	font: 1em Arial;
+}
+.parent {
+	background-color: lightcyan;
+	width: 150px;
+	height: 150px;
+	padding: 50px;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+}
+.square {
+	width: 60px;
+	height: 60px;
+	background: #333;
+	margin: 0;
+	box-shadow: 0 0 4px rgba(0,0,0,.4);
+	color: red;
+	text-align: center;
+	line-height: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.square:hover {
+	animation-play-state: paused;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(360deg);
+	}
+	50% {
+		top: 50px;
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(2);
+	}
+}
+
+@keyframes move {
+	0% {
+		transform: translate(30px);
+	}
+
+	100% {
+		transform: translate(400px, 100px);
+	}
+}
